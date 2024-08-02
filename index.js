@@ -8,12 +8,14 @@ const app = express();
 
 const PASSWORD = 'segun&tomi'; 
 
-app.use(cors({
-  origin: 'https://seguntomi2024-1.onrender.com',
+const corsOptions = {
+  origin: 'https://seguntomi2024-1.onrender.com', 
   methods: ['GET', 'POST', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
-}));
+};
 
+// Use CORS middleware
+app.use(cors(corsOptions));
 // Configure multer storage
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
