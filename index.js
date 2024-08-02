@@ -9,7 +9,7 @@ const app = express();
 const PASSWORD = 'segun&tomi'; 
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://seguntomi2024-1.onrender.com',
   methods: ['GET', 'POST', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
