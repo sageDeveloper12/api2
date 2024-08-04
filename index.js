@@ -72,3 +72,4 @@ app.delete('/media/:filename', express.json(), (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+ 
