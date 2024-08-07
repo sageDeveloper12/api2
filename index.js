@@ -9,9 +9,10 @@ const app = express();
 const PASSWORD = 'segun&tomi'; 
 
 const corsOptions = {
-  origin: 'https://seguntomi2024-1.onrender.com', 
+  origin: 'https://seguntomi2024-1.onrender.com',
   methods: ['GET', 'POST', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
 };
 
 // Use CORS middleware
